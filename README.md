@@ -63,8 +63,8 @@ makeMember("siwoo", "시우", "Siwoo"),
 
    ```ts
    photos: [
-     { src: "/images/siwoo-1.jpg", ... },
-     { src: "/images/siwoo-2.jpg", ... },
+     { src: "/images/siwoo-1.webp", ... },
+     { src: "/images/siwoo-2.webp", ... },
    ]
    ```
 
@@ -73,7 +73,7 @@ makeMember("siwoo", "시우", "Siwoo"),
 ## 스플래시 로고
 
 - 위치: `src/components/splash.tsx`
-- 기본 이미지 경로: `/public/images/logo_red.png` (이 파일을 직접 넣어주세요)
+- 기본 이미지 경로: `/public/images/logo_red.webp` (이 파일을 직접 넣어주세요)
 - 시간: 3초 (`<Splash duration={4000} ... />` 로 조절 가능)
 - 크기: `w-64` 클래스를 조정해 변경 가능
 
