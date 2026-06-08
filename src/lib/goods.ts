@@ -53,14 +53,14 @@ function makeMember(slug: string, name: string, nameEn: string): Goods {
     descJa: "WildWild 会場限定グッズ。",
     photos: [
       {
-        src: `/images/${slug}-1.jpg`,
+        src: `/images/${slug}-1.webp`,
         caption: `${name} · 첫 번째 컷`,
         captionEn: `${nameEn} · First Cut`,
         captionZh: `${nameEn} · 第一张`,
         captionJa: `${nameEn} · 1枚目`,
       },
       {
-        src: `/images/${slug}-2.jpg`,
+        src: `/images/${slug}-2.webp`,
         caption: `${name} · 두 번째 컷`,
         captionEn: `${nameEn} · Second Cut`,
         captionZh: `${nameEn} · 第二张`,

@@ -34,7 +34,7 @@ export function Splash({ duration = 3000, onFinish }: SplashProps) {
       <div className="absolute left-1/2 top-1/2 w-64 max-w-[70vw] -translate-x-1/2 -translate-y-1/2">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/logo_red.png"
+          src="/images/logo_red.webp"
           alt="WWZD"
           className="block h-auto w-full animate-splash-in object-contain"
         />

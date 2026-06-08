@@ -36,7 +36,7 @@ export function GoodsDetail({ goods }: { goods: Goods }) {
         >
         <div className="mb-8 flex items-center justify-between">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo_red.png" alt="WildWild" className="h-15 w-auto" />
+          <img src="/images/logo_red.webp" alt="WildWild" className="h-15 w-auto" />
           <div className="relative">
             <select
               value={lang}
