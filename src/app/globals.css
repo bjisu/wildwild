@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans SC", sans-serif;
+
+  --color-bg: #000000;
+  --color-surface: #000000;
+  --color-fg: oklch(0.97 0.004 280);
+  --color-muted: oklch(0.68 0.014 280);
+  --color-accent: oklch(0.74 0.17 38);
+  --color-accent-fg: oklch(0.18 0.02 38);
+  --color-border: oklch(0.32 0.018 280);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    background-color: var(--color-bg);
+    color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    font-weight: 700;
+  }
+
+  p, li {
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+  }
+}
+
+[lang="en"] h1,
+[lang="en"] h2,
+[lang="en"] h3,
+[lang="en"] h4 {
+  letter-spacing: -0.01em;
+  word-break: normal;
+}
+
+[lang="en"] p,
+[lang="en"] li {
+  line-height: 1.6;
+  word-break: normal;
+}
+
+@keyframes splash-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-splash-in {
+  animation: splash-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.page-background {
+  background-color: #000000;
+  background-image:
+    linear-gradient(rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7)),
+    url("/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
