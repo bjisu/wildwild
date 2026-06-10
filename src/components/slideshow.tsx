@@ -1,33 +1,20 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight, ImageOff } from "lucide-react";
+import { ChevronLeft, ChevronRight, ImageOff, Ticket, Home, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-type Lang = "ko" | "en" | "zh" | "ja";
 
 interface Slide {
   src: string;
   caption: string;
-  captionEn: string;
-  captionZh: string;
-  captionJa: string;
 }
 
 interface SlideshowProps {
   slides: readonly Slide[];
-  lang: Lang;
 }
 
-function getCaption(slide: Slide, lang: Lang) {
-  if (lang === "ko") return slide.caption;
-  if (lang === "zh") return slide.captionZh;
-  if (lang === "ja") return slide.captionJa;
-  return slide.captionEn;
-}
-
-export function Slideshow({ slides, lang }: SlideshowProps) {
+export function Slideshow({ slides }: SlideshowProps) {
   const [index, setIndex] = React.useState(0);
   const touchStartX = React.useRef<number | null>(null);
   const count = slides.length;
@@ -80,11 +67,11 @@ export function Slideshow({ slides, lang }: SlideshowProps) {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img
                   src={slide.src}
-                  alt={getCaption(slide, lang)}
+                  alt={slide.caption}
                   className="h-full w-full bg-black object-contain"
                 />
               ) : (
-                <Placeholder n={i + 1} lang={lang} />
+                <Placeholder n={i + 1} />
               )}
             </figure>
           ))}
@@ -94,7 +81,7 @@ export function Slideshow({ slides, lang }: SlideshowProps) {
           <Button
             variant="ghost"
             size="icon"
-            aria-label={lang === "ko" ? "이전 사진" : "Previous"}
+            aria-label="이전 사진"
             onClick={() => go(-1)}
             className="pointer-events-auto h-10 w-10 bg-black/30 text-white backdrop-blur hover:bg-black/50"
           >
@@ -103,7 +90,7 @@ export function Slideshow({ slides, lang }: SlideshowProps) {
           <Button
             variant="ghost"
             size="icon"
-            aria-label={lang === "ko" ? "다음 사진" : "Next"}
+            aria-label="다음 사진"
             onClick={() => go(1)}
             className="pointer-events-auto h-10 w-10 bg-black/30 text-white backdrop-blur hover:bg-black/50"
           >
@@ -127,20 +114,45 @@ export function Slideshow({ slides, lang }: SlideshowProps) {
           />
         ))}
       </div>
+
+      <div className="mt-6 flex items-center justify-center gap-8">
+        <a
+          href="https://linktr.ee/wildwild_official?utm_source=linktree_profile_share&ltsid=5a8046f3-3413-4e21-9156-4b29373d45e3"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="티켓"
+          className="flex h-11 w-11 items-center justify-center text-[var(--color-accent)] transition-opacity hover:opacity-70"
+        >
+          <Ticket className="h-6 w-6" />
+        </a>
+        <a
+          href="https://www.w2company.co.kr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="공식 홈페이지"
+          className="flex h-11 w-11 items-center justify-center text-[var(--color-accent)] transition-opacity hover:opacity-70"
+        >
+          <Home className="h-6 w-6" />
+        </a>
+        <a
+          href="https://www.instagram.com/wildwild_official"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="인스타그램"
+          className="flex h-11 w-11 items-center justify-center text-[var(--color-accent)] transition-opacity hover:opacity-70"
+        >
+          <Instagram className="h-6 w-6" />
+        </a>
+      </div>
     </div>
   );
 }
 
-function Placeholder({ n, lang }: { n: number; lang: Lang }) {
-  const text =
-    lang === "ko"
-      ? `사진 ${n} 자리 — /public/images 에 이미지를 넣으세요`
-      : `Photo ${n} placeholder — add image to /public/images`;
-
+function Placeholder({ n }: { n: number }) {
   return (
     <div className="flex h-full w-full flex-col items-center justify-center gap-3 bg-black text-[var(--color-muted)]">
       <ImageOff className="h-10 w-10 opacity-60" />
-      <p className="text-sm">{text}</p>
+      <p className="text-sm">사진 {n} 자리 — /public/images 에 이미지를 넣으세요</p>
     </div>
   );
 }
