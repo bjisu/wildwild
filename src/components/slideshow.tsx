@@ -115,36 +115,36 @@ export function Slideshow({ slides }: SlideshowProps) {
         ))}
       </div>
 
-      <div className="mt-6 flex items-center justify-center gap-8">
+      <div className="mt-10 flex items-center justify-center gap-8">
         <a
           href="https://linktr.ee/wildwild_official?utm_source=linktree_profile_share&ltsid=5a8046f3-3413-4e21-9156-4b29373d45e3"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="티켓"
-          className="flex h-11 w-11 items-center justify-center rounded-full bg-black/80 transition-opacity hover:opacity-70"
+          className="flex h-20 w-20 items-center justify-center rounded-full bg-black/60 transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/ticket.webp" alt="" className="h-6 w-6 [filter:brightness(0)_invert(1)]" />
+          <img src="/images/ticket.webp" alt="" className="h-9 w-9 [filter:brightness(0)_invert(1)]" />
         </a>
         <a
           href="https://www.w2company.co.kr/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="공식 홈페이지"
-          className="flex h-11 w-11 items-center justify-center rounded-full bg-black/80 transition-opacity hover:opacity-70"
+          className="flex h-20 w-20 items-center justify-center rounded-full bg-black/60 transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/home.webp" alt="" className="h-6 w-6 [filter:brightness(0)_invert(1)]" />
+          <img src="/images/home.webp" alt="" className="h-9 w-9 [filter:brightness(0)_invert(1)]" />
         </a>
         <a
           href="https://www.instagram.com/wildwild_official"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="인스타그램"
-          className="flex h-11 w-11 items-center justify-center rounded-full bg-black/80 transition-opacity hover:opacity-70"
+          className="flex h-20 w-20 items-center justify-center rounded-full bg-black/60 transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/instagram.webp" alt="" className="h-6 w-6 [filter:brightness(0)_invert(1)]" />
+          <img src="/images/instagram.webp" alt="" className="h-9 w-9 [filter:brightness(0)_invert(1)]" />
         </a>
       </div>
     </div>
