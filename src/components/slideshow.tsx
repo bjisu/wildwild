@@ -121,7 +121,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="티켓"
-          className="flex h-[60px] w-[60px] items-center justify-center rounded-full transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/ticket.webp" alt="" className="h-9 w-9 [filter:brightness(0)_invert(1)]" />
@@ -131,7 +131,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="공식 홈페이지"
-          className="flex h-[60px] w-[60px] items-center justify-center rounded-full transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/home.webp" alt="" className="h-9 w-9 [filter:brightness(0)_invert(1)]" />
@@ -141,7 +141,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="인스타그램"
-          className="flex h-[60px] w-[60px] items-center justify-center rounded-full transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[60px] w-[60px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/instagram.webp" alt="" className="h-9 w-9 [filter:brightness(0)_invert(1)]" />
