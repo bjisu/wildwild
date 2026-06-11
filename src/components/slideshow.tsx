@@ -123,7 +123,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           aria-label="티켓"
           className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          <Ticket className="h-7 w-7 text-white" />
+          <Ticket className="h-6 w-6 text-white" />
         </a>
         <a
           href="https://www.w2company.co.kr/"
@@ -132,7 +132,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           aria-label="공식 홈페이지"
           className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          <Home className="h-7 w-7 text-white" />
+          <Home className="h-6 w-6 text-white" />
         </a>
         <a
           href="https://www.instagram.com/wildwild_official"
@@ -141,7 +141,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           aria-label="인스타그램"
           className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          <Instagram className="h-7 w-7 text-white" />
+          <Instagram className="h-6 w-6 text-white" />
         </a>
       </div>
     </div>
