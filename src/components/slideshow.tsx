@@ -124,7 +124,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           className="transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/Ticket.webp" alt="" className="h-[60px] w-[60px]" />
+          <img src="/images/Ticket.webp" alt="" className="h-[50px] w-[50px]" />
         </a>
         <a
           href="https://www.w2company.co.kr/"
@@ -134,7 +134,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           className="transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/Home.webp" alt="" className="h-[60px] w-[60px]" />
+          <img src="/images/Home.webp" alt="" className="h-[50px] w-[50px]" />
         </a>
         <a
           href="https://www.instagram.com/wildwild_official"
@@ -144,7 +144,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           className="transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/Instagram.webp" alt="" className="h-[60px] w-[60px]" />
+          <img src="/images/Instagram.webp" alt="" className="h-[50px] w-[50px]" />
         </a>
       </div>
     </div>
