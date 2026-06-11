@@ -115,7 +115,7 @@ export function Slideshow({ slides }: SlideshowProps) {
         ))}
       </div>
 
-      <div className="mt-10 flex items-center justify-center gap-8">
+      <div className="mt-10 flex items-center justify-center gap-12">
         <a
           href="https://linktr.ee/wildwild_official?utm_source=linktree_profile_share&ltsid=5a8046f3-3413-4e21-9156-4b29373d45e3"
           target="_blank"
