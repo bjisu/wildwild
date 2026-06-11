@@ -22,7 +22,7 @@ export function GoodsDetail({ goods }: { goods: Goods }) {
             <span className="text-xs font-semibold tracking-[0.2em] text-[var(--color-accent)]">
               WILD WILD BOILER ROOM BEHIND PHOTO
             </span>
-            <h1 className="mt-2 text-5xl uppercase" style={{ fontFamily: '"DrukWide", sans-serif' }}>
+            <h1 className="mt-2 font-druk text-5xl uppercase">
               {goods.name}
             </h1>
           </header>
