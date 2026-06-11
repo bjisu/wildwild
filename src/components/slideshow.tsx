@@ -121,7 +121,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="티켓"
-          className="flex h-[60px] w-[60px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[70px] w-[70px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/Ticket.webp" alt="" className="h-[40px] w-[40px]" />
@@ -131,7 +131,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="공식 홈페이지"
-          className="flex h-[60px] w-[60px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[70px] w-[70px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/Home.webp" alt="" className="h-[40px] w-[40px]" />
@@ -141,7 +141,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="인스타그램"
-          className="flex h-[60px] w-[60px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[70px] w-[70px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/Instagram.webp" alt="" className="h-[40px] w-[40px]" />
