@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight, ImageOff, Clapperboard, Home, Instagram } from "lucide-react";
+import { ChevronLeft, ChevronRight, ImageOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -121,27 +121,30 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="티켓"
-          className="flex h-11 w-11 items-center justify-center text-[var(--color-accent)] transition-opacity hover:opacity-70"
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-black/80 transition-opacity hover:opacity-70"
         >
-          <Clapperboard className="h-6 w-6" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/ticket.webp" alt="" className="h-6 w-6 [filter:brightness(0)_invert(1)]" />
         </a>
         <a
           href="https://www.w2company.co.kr/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="공식 홈페이지"
-          className="flex h-11 w-11 items-center justify-center text-[var(--color-accent)] transition-opacity hover:opacity-70"
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-black/80 transition-opacity hover:opacity-70"
         >
-          <Home className="h-6 w-6" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/home.webp" alt="" className="h-6 w-6 [filter:brightness(0)_invert(1)]" />
         </a>
         <a
           href="https://www.instagram.com/wildwild_official"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="인스타그램"
-          className="flex h-11 w-11 items-center justify-center text-[var(--color-accent)] transition-opacity hover:opacity-70"
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-black/80 transition-opacity hover:opacity-70"
         >
-          <Instagram className="h-6 w-6" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/instagram.webp" alt="" className="h-6 w-6 [filter:brightness(0)_invert(1)]" />
         </a>
       </div>
     </div>

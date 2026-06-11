@@ -13,7 +13,7 @@ export function GoodsDetail({ goods }: { goods: Goods }) {
       {showSplash && <Splash onFinish={() => setShowSplash(false)} />}
       <div className="page-background min-h-dvh">
         <main className="mx-auto max-w-md px-5 pb-16 pt-6 text-[var(--color-fg)]">
-          <div className="mb-8 flex justify-center">
+          <div className="mb-8 flex items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/logo_red.webp" alt="WildWild" className="h-15 w-auto" />
           </div>

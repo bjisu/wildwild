@@ -68,7 +68,7 @@
 .page-background {
   background-color: #000000;
   background-image:
-    linear-gradient(rgb(0 0 0 / 0.7), rgb(0 0 0 / 0.7)),
+    linear-gradient(rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
     url("/images/background.webp");
   background-size: cover;
   background-position: center;
