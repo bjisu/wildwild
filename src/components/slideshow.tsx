@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight, ImageOff, Ticket, Home, Instagram } from "lucide-react";
+import { ChevronLeft, ChevronRight, ImageOff, Clapperboard, Home, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -123,7 +123,7 @@ export function Slideshow({ slides }: SlideshowProps) {
           aria-label="티켓"
           className="flex h-11 w-11 items-center justify-center text-[var(--color-accent)] transition-opacity hover:opacity-70"
         >
-          <Ticket className="h-6 w-6" />
+          <Clapperboard className="h-6 w-6" />
         </a>
         <a
           href="https://www.w2company.co.kr/"
