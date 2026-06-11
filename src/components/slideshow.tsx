@@ -121,27 +121,27 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="티켓"
-          className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          <Ticket className="h-6 w-6 text-white" />
+          <Ticket className="h-[26px] w-[26px] text-white" />
         </a>
         <a
           href="https://www.w2company.co.kr/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="공식 홈페이지"
-          className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          <Home className="h-6 w-6 text-white" />
+          <Home className="h-[26px] w-[26px] text-white" />
         </a>
         <a
           href="https://www.instagram.com/wildwild_official"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="인스타그램"
-          className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[50px] w-[50px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          <Instagram className="h-6 w-6 text-white" />
+          <Instagram className="h-[26px] w-[26px] text-white" />
         </a>
       </div>
     </div>
