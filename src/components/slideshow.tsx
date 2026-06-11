@@ -50,7 +50,7 @@ export function Slideshow({ slides }: SlideshowProps) {
   return (
     <div className="w-full">
       <div
-        className="relative aspect-[3/4] w-full overflow-hidden rounded-3xl bg-black sm:aspect-[4/5]"
+        className="relative aspect-[3/4] w-full overflow-hidden bg-black sm:aspect-[4/5]"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
       >
@@ -99,7 +99,7 @@ export function Slideshow({ slides }: SlideshowProps) {
         </div>
       </div>
 
-      <div className="mt-5 flex items-center justify-center gap-2.5">
+      <div className="mt-5 flex items-center justify-center gap-2.5 px-5">
         {slides.map((_, i) => (
           <button
             key={i}
@@ -115,7 +115,7 @@ export function Slideshow({ slides }: SlideshowProps) {
         ))}
       </div>
 
-      <div className="mt-10 flex items-center justify-center gap-12">
+      <div className="mt-10 flex items-center justify-center gap-12 px-5">
         <a
           href="https://linktr.ee/wildwild_official?utm_source=linktree_profile_share&ltsid=5a8046f3-3413-4e21-9156-4b29373d45e3"
           target="_blank"
