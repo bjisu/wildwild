@@ -24,7 +24,7 @@ export const goodsList: Goods[] = [
   makeMember("huiyeob", "HUIYEOB"),
   makeMember("jay", "JAY"),
   makeMember("hyukjin", "HYUKJIN"),
-  makeMember("hansaem", "SAEM"),
+  makeMember("saem", "SAEM"),
   makeMember("hjinwook", "JINWOOK"),
   makeMember("youngjoon", "YOUNGJOON"),
   makeMember("chunil", "CHUNIL"),
