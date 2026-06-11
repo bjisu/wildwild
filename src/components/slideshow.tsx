@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight, ImageOff } from "lucide-react";
+import { ChevronLeft, ChevronRight, ImageOff, Ticket, Home, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -121,30 +121,27 @@ export function Slideshow({ slides }: SlideshowProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="티켓"
-          className="flex h-[70px] w-[70px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/Ticket.webp" alt="" className="h-[55px] w-[55px]" />
+          <Ticket className="h-7 w-7 text-white" />
         </a>
         <a
           href="https://www.w2company.co.kr/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="공식 홈페이지"
-          className="flex h-[70px] w-[70px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/Home.webp" alt="" className="h-[55px] w-[55px]" />
+          <Home className="h-7 w-7 text-white" />
         </a>
         <a
           href="https://www.instagram.com/wildwild_official"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="인스타그램"
-          className="flex h-[70px] w-[70px] items-center justify-center transition-all hover:brightness-125 active:scale-95"
+          className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-black/70 transition-all hover:brightness-125 active:scale-95"
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/Instagram.webp" alt="" className="h-[55px] w-[55px]" />
+          <Instagram className="h-7 w-7 text-white" />
         </a>
       </div>
     </div>
